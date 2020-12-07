@@ -5,7 +5,7 @@ git clone https://github.com/cyboerg42/buildroot
 cd buildroot
 make kendryte_k210_defconfig
 make menuconfig
-(selet 5.8 kernel headers)
+(select 5.8 kernel headers)
 make
 ```
 
