@@ -12,7 +12,7 @@ make
 and now flash the image :
 
 ```
-sudo python3 kflash.py -p /dev/ttyUSB0 -b 1500000 -t output/image/loader.bin
+sudo python3 kflash.py -p /dev/ttyUSB0 -b 1500000 -t output/images/loader.bin
 ```
 
 
