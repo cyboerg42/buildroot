@@ -1,3 +1,23 @@
+### How-To Build for Kendryte K210
+
+```
+git clone https://github.com/cyboerg42/buildroot
+cd buildroot
+make kendryte_k210_defconfig
+make menuconfig
+(selet 5.8 kernel headers)
+make
+```
+
+and now flash the image :
+
+```
+sudo python3 kflash.py -p /dev/ttyUSB0 -b 1500000 -t output/image/loader.bin
+```
+
+
+### Original Readme
+
 Buildroot is a simple, efficient and easy-to-use tool to generate embedded
 Linux systems through cross-compilation.
 
